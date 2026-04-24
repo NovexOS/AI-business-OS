@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { leads } from "../data/leads.js";
+import { leads } from "../data/leads";
 
 export default function Chatbot() {
 
