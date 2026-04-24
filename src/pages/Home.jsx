@@ -1,47 +1,34 @@
 export default function Home() {
   return (
-    <div className="text-center p-10">
+    <div className="p-10">
 
-      <h1 className="text-5xl font-bold mb-4">
+      <h1 className="text-4xl font-bold">
         AI Business Automation OS
       </h1>
 
-      <p className="text-lg mb-6">
-        Automate your entire business using powerful AI agents.
+      <p className="mt-4 text-lg">
+        Automate your entire business with AI agents.
       </p>
 
-      <button className="bg-black text-white px-6 py-3 rounded-lg">
-        Start Free Trial
+      <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded">
+        Get Started
       </button>
 
-      <h2 className="text-3xl font-bold mt-16 mb-8">
-        Core Modules
-      </h2>
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-
-        <div className="border p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold">AI CRM</h3>
+        <div className="p-6 border rounded">
+          <h2 className="text-xl font-semibold">AI CRM</h2>
+          <p className="mt-2">Manage customers with AI powered CRM.</p>
         </div>
 
-        <div className="border p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold">AI Chatbot</h3>
+        <div className="p-6 border rounded">
+          <h2 className="text-xl font-semibold">AI Chatbot</h2>
+          <p className="mt-2">Automate customer support with AI chatbot.</p>
         </div>
 
-        <div className="border p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold">Workflow Automation</h3>
-        </div>
-
-        <div className="border p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold">Marketing Automation</h3>
-        </div>
-
-        <div className="border p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold">Sales Automation</h3>
-        </div>
-
-        <div className="border p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold">Analytics Dashboard</h3>
+        <div className="p-6 border rounded">
+          <h2 className="text-xl font-semibold">Automation</h2>
+          <p className="mt-2">Automate sales, marketing and workflows.</p>
         </div>
 
       </div>

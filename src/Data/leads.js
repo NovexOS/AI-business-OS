@@ -1,17 +1,14 @@
-export const leads = [
+const leads = [
   {
     name: "Rahul Sharma",
-    email: "rahul@gmail.com",
-    status: "New Lead"
+    email: "rahul@email.com",
+    company: "ABC Pvt Ltd"
   },
   {
     name: "Priya Singh",
-    email: "priya@gmail.com",
-    status: "Contacted"
-  },
-  {
-    name: "Amit Verma",
-    email: "amit@gmail.com",
-    status: "Converted"
+    email: "priya@email.com",
+    company: "XYZ Pvt Ltd"
   }
-];
+]
+
+export default leads

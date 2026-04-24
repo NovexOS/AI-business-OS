@@ -1,9 +1,14 @@
-function Features() {
+export default function Features() {
   return (
-    <div>
-      <h1>Platform Features</h1>
+    <div style={{padding:"40px"}}>
+      <h1>Features</h1>
+
+      <ul>
+        <li>AI CRM</li>
+        <li>AI Chatbot</li>
+        <li>Workflow Automation</li>
+        <li>Marketing Automation</li>
+      </ul>
     </div>
   );
 }
-
-export default Features;

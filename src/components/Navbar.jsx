@@ -1,18 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav style={{background:"#111",padding:"15px"}}>
-      <Link style={{color:"white",marginRight:"20px"}} to="/">Home</Link>
-      <Link style={{color:"white",marginRight:"20px"}} to="/features">Features</Link>
-      <Link style={{color:"white",marginRight:"20px"}} to="/pricing">Pricing</Link>
-      <Link style={{color:"white",marginRight:"20px"}} to="/about">About</Link>
-      <Link style={{color:"white",marginRight:"20px"}} to="/contact">Contact</Link>
-      <Link style={{color:"white",marginRight:"20px"}} to="/login">Login</Link>
-      <Link style={{color:"white"}} to="/signup">Signup</Link>
+    <nav style={{display:"flex",gap:"20px",padding:"20px",background:"#111",color:"#fff"}}>
+      <Link to="/" style={{color:"white"}}>Home</Link>
+      <Link to="/features" style={{color:"white"}}>Features</Link>
+      <Link to="/pricing" style={{color:"white"}}>Pricing</Link>
+      <Link to="/about" style={{color:"white"}}>About</Link>
+      <Link to="/dashboard" style={{color:"white"}}>Dashboard</Link>
     </nav>
   );
 }
-
-export default Navbar;

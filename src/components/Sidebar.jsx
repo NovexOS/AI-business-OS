@@ -1,37 +1,28 @@
-import { Link } from "react-router-dom";
-
-export default function Sidebar() {
+function Sidebar() {
   return (
-    <div className="w-64 h-screen bg-black text-white p-6">
+    <div style={{
+      width: "220px",
+      height: "100vh",
+      background: "#111",
+      color: "white",
+      padding: "20px",
+      position: "fixed"
+    }}>
 
-      <h1 className="text-2xl font-bold mb-10">
-        NovexOS
-      </h1>
+      <h2>NovexOS</h2>
 
-      <ul className="space-y-4">
+      <div style={{marginTop:"30px"}}>
 
-        <li className="hover:text-gray-300">
-          <Link to="/">Dashboard</Link>
-        </li>
+        <p><a href="/" style={{color:"white"}}>Dashboard</a></p>
+        <p><a href="/leads" style={{color:"white"}}>Leads</a></p>
+        <p><a href="/automation" style={{color:"white"}}>Automation</a></p>
+        <p><a href="/analytics" style={{color:"white"}}>Analytics</a></p>
+        <p><a href="/about" style={{color:"white"}}>About</a></p>
 
-        <li className="hover:text-gray-300">
-          <Link to="/crm">CRM</Link>
-        </li>
-
-        <li className="hover:text-gray-300">
-          <Link to="/chatbot">AI Chatbot</Link>
-        </li>
-
-        <li className="hover:text-gray-300">
-          <Link to="/automation">Automation</Link>
-        </li>
-
-        <li className="hover:text-gray-300">
-          <Link to="/analytics">Analytics</Link>
-        </li>
-
-      </ul>
+      </div>
 
     </div>
-  );
+  )
 }
+
+export default Sidebar
