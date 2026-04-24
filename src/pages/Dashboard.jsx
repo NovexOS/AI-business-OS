@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts"
 
 const data = [
@@ -20,25 +21,27 @@ export default function Dashboard() {
         </h2>
 
         <ul className="space-y-4">
-          <li className="hover:text-blue-400 cursor-pointer">
-            Dashboard
-          </li>
 
-          <li className="hover:text-blue-400 cursor-pointer">
-            Leads
-          </li>
+         <li className="hover:text-blue-400">
+<Link to="/dashboard">Dashboard</Link>
+</li>
 
-          <li className="hover:text-blue-400 cursor-pointer">
-            Automation
-          </li>
+<li className="hover:text-blue-400">
+<Link to="/leads">Leads</Link>
+</li>
 
-          <li className="hover:text-blue-400 cursor-pointer">
-            Analytics
-          </li>
+<li className="hover:text-blue-400">
+<Link to="/automation">Automation</Link>
+</li>
 
-          <li className="hover:text-blue-400 cursor-pointer">
-            Settings
-          </li>
+<li className="hover:text-blue-400">
+<Link to="/analytics">Analytics</Link>
+</li>
+
+<li className="hover:text-blue-400">
+<Link to="/settings">Settings</Link>
+</li>
+
         </ul>
 
       </div>
