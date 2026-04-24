@@ -1,12 +1,14 @@
 export const leads = [
   {
-    name: "Rahul",
-    company: "ABC Pvt Ltd",
-    status: "New Lead"
+    id: 1,
+    name: "Rahul Sharma",
+    email: "rahul@gmail.com",
+    status: "New"
   },
   {
-    name: "Amit",
-    company: "XYZ Pvt Ltd",
-    status: "Follow Up"
+    id: 2,
+    name: "Priya Singh",
+    email: "priya@gmail.com",
+    status: "Contacted"
   }
 ];
