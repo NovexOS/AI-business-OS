@@ -1,28 +1,15 @@
-function Sidebar() {
-  return (
-    <div style={{
-      width: "220px",
-      height: "100vh",
-      background: "#111",
-      color: "white",
-      padding: "20px",
-      position: "fixed"
-    }}>
+import { Link } from "react-router-dom";
 
-      <h2>NovexOS</h2>
+export default function Sidebar(){
+  return(
+    <div className="w-64 h-screen bg-gray-900 text-white p-6">
+      <h2 className="text-2xl font-bold mb-10">AI OS</h2>
 
-      <div style={{marginTop:"30px"}}>
-
-        <p><a href="/" style={{color:"white"}}>Dashboard</a></p>
-        <p><a href="/leads" style={{color:"white"}}>Leads</a></p>
-        <p><a href="/automation" style={{color:"white"}}>Automation</a></p>
-        <p><a href="/analytics" style={{color:"white"}}>Analytics</a></p>
-        <p><a href="/about" style={{color:"white"}}>About</a></p>
-
-      </div>
-
+      <ul className="space-y-4">
+        <li><Link to="/dashboard">Dashboard</Link></li>
+        <li><Link to="/leads">Leads</Link></li>
+        <li><Link to="/analytics">Analytics</Link></li>
+      </ul>
     </div>
   )
 }
-
-export default Sidebar
