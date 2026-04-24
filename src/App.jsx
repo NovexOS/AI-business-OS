@@ -7,6 +7,7 @@ import Leads from "./pages/Leads";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Analytics from "./pages/Analytics";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/leads" element={<Leads />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/analytics" element={<Analytics />} />
           </Routes>
         </div>
       </div>
